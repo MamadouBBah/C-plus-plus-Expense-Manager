@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expense Tracker — C++ Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-left: 4px solid #38bdf8;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #1e293b;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #1e293b;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 6px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #334155;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 3px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Expense Tracker (C++ CLI Application)</h1>
+    <p>A structured object-oriented expense management system built in C++</p>
+</header>
+
+<main>
+
+<section>
+    <h2>📌 Project Overview</h2>
+    <p>
+        This project is a command-line Expense Tracker built in C++ designed to demonstrate
+        object-oriented programming, file persistence, and CRUD operations.
+    </p>
+    <p>
+        Users can add, view, edit, and delete expenses while tracking total spending.
+        Data is saved to disk, allowing the program to retain state between sessions.
+    </p>
+</section>
+
+<section>
+    <h2>🏗️ Tech Stack</h2>
+    <span class="tag">C++</span>
+    <span class="tag">STL (vector, string)</span>
+    <span class="tag">File I/O (fstream)</span>
+    <span class="tag">OOP Design</span>
+    <span class="tag">CLI Application</span>
+</section>
+
+<section>
+    <h2>⚙️ Features</h2>
+
+    <div class="card">✔ Add new expenses</div>
+    <div class="card">✔ View all expenses</div>
+    <div class="card">✔ Edit existing expenses</div>
+    <div class="card">✔ Delete expenses</div>
+    <div class="card">✔ Calculate total spending</div>
+    <div class="card">✔ Persistent storage using file I/O</div>
+</section>
+
+<section>
+    <h2>🧠 Architecture</h2>
+    <pre>
+main.cpp
+   ↓
+ExpenseManager (logic layer)
+   ↓
+Expense objects (data model)
+   ↓
+File storage (load/save persistence)
+    </pre>
+</section>
+
+<section>
+    <h2>🚧 Challenges & Solutions</h2>
+
+    <div class="card">
+        <strong>Header/Source Mismatch</strong><br/>
+        Fixed by ensuring function declarations in <code>.h</code> matched implementations in <code>.cpp</code>.
+    </div>
+
+    <div class="card">
+        <strong>Input Handling Issues</strong><br/>
+        Resolved using <code>cin.ignore()</code> to manage mixed input types.
+    </div>
+
+    <div class="card">
+        <strong>File Persistence Problems</strong><br/>
+        Solved by standardizing file paths and implementing consistent serialization.
+    </div>
+
+    <div class="card">
+        <strong>Control Flow Bugs</strong><br/>
+        Fixed uninitialized menu input by properly capturing user choice each loop iteration.
+    </div>
+</section>
+
+<section>
+    <h2>📚 Key Learnings</h2>
+    <ul>
+        <li>Object-oriented programming in C++</li>
+        <li>Multi-file project structure</li>
+        <li>STL containers and iteration</li>
+        <li>File input/output and persistence</li>
+        <li>Debugging compilation and linkage errors</li>
+        <li>Managing application state in CLI systems</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🚀 Future Improvements</h2>
+
+    <div class="card">
+        💱 Multi-currency support with conversion rates (USD, EUR, GBP)
+    </div>
+
+    <div class="card">
+        🔍 Search and filtering by category or keyword
+    </div>
+
+    <div class="card">
+        📊 Spending analytics and monthly summaries
+    </div>
+
+    <div class="card">
+        💾 Upgrade storage format to CSV or JSON
+    </div>
+
+    <div class="card">
+        🖥️ Future GUI version using a graphical framework
+    </div>
+</section>
+
+<section>
+    <h2>🏁 Final Summary</h2>
+    <p>
+        This project demonstrates a full software development cycle in C++:
+        design, implementation, debugging, persistence, and iterative refinement.
+        It serves as a foundational example of object-oriented programming and
+        real-world application structure.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    Built as part of a C++ learning and portfolio development project
+</footer>
+
+</body>
+</html>
