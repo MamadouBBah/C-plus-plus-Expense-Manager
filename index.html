@@ -123,7 +123,26 @@
     <div class="card">✔ Calculate total spending</div>
     <div class="card">✔ Persistent storage using file I/O</div>
 
-        <div class="card"> Coding Sample from Expense Manager.cpp </div>
+   <section id="code">
+    <h2>Code Sample</h2>
+
+    <p>
+        The Expense Manager class handles expense storage and retrieval
+        using STL vectors and object-oriented design principles.
+    </p>
+
+<pre><code>
+void ExpenseManager::addExpense(
+    const std::string& description,
+    double amount,
+    const std::string& category)
+{
+    expenses.push_back(
+        Expense(description, amount, category));
+}
+</code></pre>
+
+</section>
 
 </section>
 
